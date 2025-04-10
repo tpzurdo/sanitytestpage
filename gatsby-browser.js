@@ -1,7 +1,6 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/
- */
+import "./src/styles/global.css"
 
-// You can delete this file if you're not using it
+// gatsby-browser.js
+if (process.env.NODE_ENV === "development") {
+  require("./src/styles/dev-404-styles.css")
+}

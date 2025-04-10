@@ -39,5 +39,15 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "gatsby-source-sanity",
+      options: {
+        projectId: "93c8ux96", // reemplazá esto
+        dataset: "production",
+        watchMode: true,
+        overlayDrafts: false,
+      },
+    },
+    "gatsby-plugin-postcss",
   ],
 }
